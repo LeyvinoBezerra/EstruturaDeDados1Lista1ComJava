@@ -18,7 +18,7 @@ public class Q4 {
 		
 		int media = (n1 + n2 + n3) / 3;
 		
-		System.out.println("A média é ="+ media);
+		System.out.println("A media eh ="+ media);
 	}
 
 }

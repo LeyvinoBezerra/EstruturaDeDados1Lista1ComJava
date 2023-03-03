@@ -9,7 +9,7 @@ public class Q9 {
 		Scanner ler = new Scanner(System.in);
 
 		System.out.println("-----------------");
-		System.out.println("-ÁREA DO CÍRCULO-");
+		System.out.println("-AREA DO CIRCULO-");
 		System.out.println("-----------------");
 		System.out.println("-----------------");
 		System.out.println("Entre Com o Raio:");
@@ -17,11 +17,11 @@ public class Q9 {
 		
 		if (raio < 0) {
 
-			System.out.println("Raio não pode ser menor que zero!");
+			System.out.println("Raio nao pode ser menor que zero!");
 
 		} else {
 			double area = Math.PI * (raio * raio);
-			System.out.printf("Área do Cículo É: %e \n" , area);
+			System.out.printf("Area do Caculo EH: %e \n" , area);
 
 		}
 

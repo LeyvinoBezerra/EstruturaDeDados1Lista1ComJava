@@ -11,9 +11,9 @@ public class QQ10 {
 		int num = ler.nextInt();
 
 		if (num % 2 == 0) {
-			System.out.println("O Numero é Par!" + " " + num);
+			System.out.println("O Numero EH Par!" + " " + num);
 		} else {
-			System.out.println("O Numero é Impar!" + " " + num);
+			System.out.println("O Numero EH Impar!" + " " + num);
 		}
 	}
 

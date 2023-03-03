@@ -10,7 +10,7 @@ public class QQ11 {
 		double transfe;
 
 		Scanner ler = new Scanner(System.in);
-		System.out.println("Quanto será tranferido?");
+		System.out.println("Quanto sera tranferido?");
 		transfe = ler.nextDouble();
 
 		conta1 = conta1 - transfe;
@@ -19,7 +19,7 @@ public class QQ11 {
 		if (transfe > 100) {
 			System.out.println("Valor insuficiente em conta");
 		} else {
-			System.out.printf("Transferencia de " + transfe + "  feita com sucesso, valor atual da conta é:"+ conta2);
+			System.out.printf("Transferencia de " + transfe + "  feita com sucesso, valor atual da conta eh:"+ conta2);
 
 		}
 	}

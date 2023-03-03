@@ -22,7 +22,7 @@ public class QQ12 {
 			System.out.println("Reprovado: " + media);
 
 		} else if (media == 3.5 | media < 7) {
-			System.out.println("Recuperação: " + media);
+			System.out.println("Recuperacao: " + media);
 		} else if (media >= 7) {
 			System.out.println("Aprovado: " + media);
 		}

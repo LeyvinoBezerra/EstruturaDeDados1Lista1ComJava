@@ -19,7 +19,7 @@ public class Q1 {
 
 		System.out.println("A Seu nome completo:" + nomeCompleto);
 		
-		// Problema resolvido, prezado! te amo obrigado ! fera!
+	
 	}
 
 }

@@ -1,47 +1,64 @@
 package lista1package;
 
-import java.util.Scanner;
-
 public class QQ36 {
-
-	public static int soma(int a, int b) {
-		int i, soma = 0;
-		if (a < b) {
-			for (i = a + 1; i < b; i++)
-				soma += i;
-		} else {
-			for (i = b + 1; i < a; i++)
-				soma += i;
-		}
-		return soma;
-	}
-
-	public static int somaRec(int a, int b) {
-		int soma = 0;
-		if (a == b) {
-			System.out.println("\n");
-		} else {
-			soma = a + somaRec(a + 1, b);
-		}
-		return soma;
-	}
-
-	public static void main(String[] args) {
-		Scanner ler = new Scanner(System.in);
-		int a, b, res;
 	
-	
-		System.out.println("Valor 1: ");
-		a = ler.nextInt();
-		System.out.print("Valor 2: ");
-		b = ler.nextInt();
-        
-		res = soma(a,b);
-		System.out.print(res);
+		private static final int TIME = 1000;
 
-		res = somaRec(a + 1, b);
-		System.out.print(res);
+		public static void main(String[] args) {
+			System.out.println("\n REGRESSIVIDADE EX1 \n");
+			regressiva(8);
+
+			System.out.println("\n REGRESSIVIDADE EX2 \n");
+			double fat = fatorial(4);
+			System.out.println("Fatorial = " + fat);
+
+		}
+
+		private static void regressiva(int n) {
+			if (n == 0) // Condicao de parada
+			{
+				System.out.println("PAROU!");
+			} else {
+				sleep(TIME);
+				System.out.printf("Empilhando... %d \n", n);
+
+				regressiva(n - 1); // chamada recursiva
+
+				sleep(TIME);
+				System.out.printf("Desempilhando... %d \n", n);
+			}
+		}
+
+		private static double fatorial(int n) {
+
+			double fat;
+
+			if (n == 0) {
+
+				System.out.println("Parou!!!!");
+				fat = 1;
+
+			} else {
+				sleep(TIME);
+				System.out.printf("Empilhando... %d \n", n);
+
+				fat = n * fatorial(n - 1);
+
+				sleep(TIME);
+				System.out.printf("Desempilhando... %d \n", n);
+				System.out.printf("fat = %f \n", fat);
+
+			}
+
+			return fat;
+
+		}
+
+		private static void sleep(int ms) {
+			try {
+				Thread.sleep(ms);
+			} catch (InterruptedException ex) {
+			}
+		}
 
 	}
-
-}

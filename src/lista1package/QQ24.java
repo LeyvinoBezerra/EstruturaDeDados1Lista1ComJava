@@ -4,23 +4,63 @@ import java.util.Scanner;
 
 public class QQ24 {
 
-	  public static void main(String[] args){
-	        Scanner ler = new Scanner(System.in);
-	        
-	        // declaração de vetor
-	        int[] vetor = new int[3];
-	        
-	        // entrada de dados
-	        for(int i = 0; i < vetor.length; i++){
-	            System.out.println("Digite um número");
-	            vetor[i] = ler.nextInt();
-	        }
-	        
-	        // saída de dados
-	        for(int i = vetor.length-1; i >= 0; i--){
-	            System.out.print(vetor[i]);
-	        }
-	        
-	    }
+	public static void main(String[] args) {
+		
+		Scanner ler = new Scanner(System.in);
+		
+		int ope,fat,n;
+		Double base,expoente,poten,raiz;
+		
+		
+		System.out.print(" 1 - potenciacao   \n");
+		System.out.print(" 2 - raiz quadrada \n");
+		System.out.print(" 3 - fatorial      \n");   
+		System.out.print(" 0 ï¿½ sair          \n");
 
+		System.out.println("Digite A Operacao:");
+		ope = ler.nextInt();
+
+		   switch ( ope )
+		  {
+		     case 1 :
+		    	 System.out.println("Digite a base:");
+		         base = ler.nextDouble();
+		        
+		         System.out.println("Digite o indice:");
+		         expoente = ler.nextDouble();
+		        
+				poten= Math.pow(base, expoente);
+				System.out.print("a potencia e: "+ poten);
+		     break;
+		 
+		     case 2 :
+		    	 System.out.println("Digite a Base:");
+		         base = ler.nextDouble();
+		        
+			
+		    	raiz=Math.sqrt(base);
+		    	System.out.print("A raiz e: "+ raiz);
+		     break;
+		 
+		     case 3 :
+		        
+		    	 System.out.println("Insira um valor para o qual deseja calcular seu fatorial: ");
+		         n = ler.nextInt();
+		        for(fat = 1; n > 1; n = n - 1)
+		        fat = fat * n;
+		        System.out.print("\nFatorial calculado: "+ fat);
+
+
+		    break;
+		    
+		     default :
+		       
+		    break;
+		    
+
+	}
+
+	}
 }
+
+	

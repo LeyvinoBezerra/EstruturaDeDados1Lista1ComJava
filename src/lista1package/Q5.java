@@ -18,7 +18,7 @@ public class Q5 {
 		
 		float media = (n1 + n2 + n3) / 3;
 		
-		System.out.printf("A média é =  %.2f \n", media);
+		System.out.printf("A media eh =  %.2f \n", media);
 	}
 
 }

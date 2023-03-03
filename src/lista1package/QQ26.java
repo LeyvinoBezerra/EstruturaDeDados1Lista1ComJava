@@ -1,28 +1,45 @@
 package lista1package;
 
-import java.util.Scanner;
-
 public class QQ26 {
-
+	
 	public static void main(String[] args) {
-	      Scanner ler = new Scanner(System.in);
-	        
-	        // declaração de vetor
-	        int[] vetor = new int[3];
-	        
-	        // entrada de dados
-	        for(int i = 0; i < vetor.length; i++){
-	            System.out.println("Digite um número");
-	            vetor[i] = ler.nextInt();
-	        }
-	        
-	        // saída de dados
-	        for(int i = vetor.length-1; i >= 0; i--){
-	            System.out.print(vetor[i]);
-	        }
-	        
-	    }
+		
+		
+		int linhas=4;
+		int colunas=4;
+		
+		int max[][] = new int[linhas][colunas];
+	 
+	    
+	    System.out.println("Atribuicao com loop...");
+		for (int l=0; l<linhas; l++) 
+			for (int c=0; c<colunas; c++) {
+				max[l][c] = l + c;
+		}
 
+	  
+		System.out.println("Imprimindo com loop...");
+		exibirMatriz(max);	
 	}
 
 
+	
+	private static void exibirMatriz(int[][] m) 
+	{
+		int linhas = m.length;
+		System.out.println("linhas = " + linhas);
+		
+		int colunas = m[0].length;
+		System.out.println("colunas = " + colunas);
+				
+		for (int l=0; l<linhas; l++) 
+		{
+			System.out.println();
+			
+			for (int c=0; c<colunas; c++) {
+				System.out.print(m[l][c] + "\t");
+			}
+		}
+	}
+	
+}
